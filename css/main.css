@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(0.33deg, #1E1E1E 1.35%, #E1B4FE 195.79%);
+}
+
+section.hero {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  align-items: center;
+  padding: 8px 16px;
+  color: white;
+}
+section.hero .greeting {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 24px;
+}
+section.hero #hint1 {
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+}
+section.hero .hero-img {
+  width: 20rem;
+  border-radius: 38px;
+}
+section.hero .quote {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+section.hero #hint2 {
+  color: white;
+  font-weight: lighter;
+}
+section.hero .about-me {
+  display: flex;
+  font-family: Arial;
+  flex-direction: column;
+  row-gap: 1em;
+  margin-top: 2em;
+}
+section.hero .about-me h1 {
+  font-weight: bold;
+  font-size: 2em;
+  text-align: start;
+}
+section.hero .about-me p {
+  color: white;
+  font-weight: lighter;
+  text-align: start;
+}
+section.hero .about-me p span {
+  font-weight: bold;
+}
+section.hero .about-me button {
+  background: black;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 8px 16px;
+  text-align: center;
+  color: white;
+}
+section.hero .social {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+section.hero .social svg {
+  width: 2em;
+}/*# sourceMappingURL=main.css.map */

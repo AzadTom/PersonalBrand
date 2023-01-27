@@ -28,6 +28,7 @@ section.hero #hint1 {
   color: white;
   width: auto;
   font-weight: lighter;
+  font-size: 10px;
 }
 section.hero .hero-img {
   width: 20rem;

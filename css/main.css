@@ -64,7 +64,10 @@ section.hero .about-me p {
 section.hero .about-me p span {
   font-weight: bold;
 }
-section.hero .about-me button {
+section.hero .about-me .button-align {
+  text-align: center;
+}
+section.hero .about-me .button-align button {
   background: black;
   border-radius: 50px;
   text-decoration: none;

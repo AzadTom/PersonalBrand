@@ -127,6 +127,7 @@ section.project .img-contain {
 section.project img {
   width: 300px;
   z-index: -1;
+  border-radius: 16px;
 }
 section.project .content-1 {
   display: flex;
@@ -172,6 +173,8 @@ section.project .content-1 button {
   justify-content: center;
   align-items: center;
   color: white;
+  text-transform: uppercase;
+  margin-top: 2em;
 }
 
 section.contact-role {

@@ -26,7 +26,9 @@ section.hero .greeting {
 section.hero #hint1 {
   color: white;
   width: auto;
+  text-align: center;
   font-weight: lighter;
+  font-size: 12px;
 }
 section.hero .hero-img {
   width: 20rem;

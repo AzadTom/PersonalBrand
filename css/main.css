@@ -9,6 +9,61 @@ body {
   font-family: Arial;
 }
 
+.open-nav {
+  transform: translateX(0);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+header h1 {
+  color: white;
+  font-size: large;
+}
+header h1 span {
+  color: #afafaf;
+}
+header .menu {
+  width: 2em;
+  cursor: pointer;
+}
+header nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: white;
+  width: 50%;
+  height: 100vh;
+  z-index: 999;
+  text-transform: uppercase;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  transform: translateX(100%);
+  flex-direction: column;
+}
+header nav svg {
+  width: 2em;
+  float: right;
+  margin: 12px;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8px;
+}
+header nav ul a {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+  width: 100%;
+}
+header nav ul a:hover {
+  background: rgb(214, 212, 212);
+}
+
 section.hero {
   font-family: Arial;
   display: flex;
@@ -21,7 +76,7 @@ section.hero {
   color: white;
 }
 section.hero .greeting {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   letter-spacing: 24px;
@@ -33,7 +88,7 @@ section.hero #hint1 {
   font-weight: lighter;
 }
 section.hero .hero-img {
-  width: 20rem;
+  width: 18rem;
   border-radius: 38px;
 }
 section.hero .quote {
@@ -72,7 +127,8 @@ section.hero .about-me .button-align button {
   background: black;
   border-radius: 50px;
   text-decoration: none;
-  padding: 8px 16px;
+  border: none;
+  padding: 1rem 2rem;
   text-align: center;
   color: white;
 }
@@ -85,7 +141,6 @@ section.hero .best-line {
   margin: 2em auto;
 }
 section.hero .best-line p {
-  width: 300px;
   font-weight: lighter;
 }
 section.hero .best-line h2 {
@@ -94,7 +149,19 @@ section.hero .best-line h2 {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 2em;
+}
+footer hr {
+  margin: 2em 0;
+}
+footer h2 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5em 0;
 }
 footer .social {
   display: flex;
@@ -137,7 +204,7 @@ section.project .content-1 {
   width: 300px;
   justify-content: start;
   z-index: 999;
-  padding: 8px 16px;
+  padding: 1rem 2rem;
   color: white;
 }
 section.project .content-1 p {
@@ -153,11 +220,10 @@ section.project .content-1 button {
 }
 
 .best-line {
-  text-align: start;
-  margin: 2em auto;
+  text-align: left;
+  margin: 2em;
 }
 .best-line p {
-  width: 300px;
   font-weight: lighter;
 }
 .best-line h2 {
@@ -174,7 +240,7 @@ section.project .content-1 button {
   align-items: center;
   color: white;
   text-transform: uppercase;
-  margin-top: 2em;
+  margin: 2em;
 }
 
 section.contact-role {
@@ -192,14 +258,14 @@ section.contact-role .contact-us {
   row-gap: 1em;
   background: white;
   width: 300px;
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 2rem;
+  padding: 2rem;
   box-shadow: 0px 50px 100px #000000;
 }
 section.contact-role .contact-us input {
   border: none;
-  padding: 8px 16px;
-  border-radius: 16px;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
   text-decoration: none;
   list-style-type: none;
   outline: none;
@@ -207,19 +273,19 @@ section.contact-role .contact-us input {
   background: rgba(217, 217, 217, 0.5);
 }
 section.contact-role .contact-us textarea {
-  padding: 8px 16px;
+  padding: 1rem 2rem;
   text-decoration: none;
   list-style-type: none;
   outline: none;
   border: none;
-  border-radius: 16px;
+  border-radius: 2rem;
   width: 269px;
   background: rgba(217, 217, 217, 0.5);
 }
 section.contact-role .contact-us button {
   background: black;
   color: white;
-  padding: 8px 16px;
+  padding: 1rem 2rem;
   border-radius: 50px;
 }
 section.contact-role footer .social {
@@ -233,4 +299,101 @@ section.contact-role footer .social {
 section.contact-role footer .social svg {
   width: 2em;
   cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .project-title {
+    margin-bottom: -6em;
+  }
+  section.project {
+    margin: 16em 0em;
+  }
+  section.project img {
+    width: 500px;
+    border-radius: 4rem;
+  }
+  section.project .content-1 {
+    padding: 1rem 2rem;
+    width: 500px;
+  }
+  section.project .content-1 h1 {
+    font-size: 2rem;
+  }
+  section.project .content-1 p {
+    font-weight: 200;
+    font-size: 1.2rem;
+  }
+  section.project .content-1 button {
+    padding: 1rem 2rem;
+    border: none;
+  }
+  section.contact-role .contact-us {
+    width: 500px;
+  }
+  section.contact-role .contact-us input {
+    width: 450px;
+  }
+  section.contact-role .contact-us textarea {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .menu {
+    display: none;
+  }
+  header nav {
+    transform: translateX(0);
+    width: auto;
+    height: auto;
+    background: none;
+    position: none;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul a {
+    color: #E1B4FE;
+    font-weight: lighter;
+  }
+  header nav ul a:hover {
+    background: none;
+    border-bottom: 1px solid #E1B4FE;
+  }
+  header nav .close {
+    display: none;
+  }
+  #left-right {
+    flex-direction: row;
+  }
+  .project-title {
+    margin: 2em;
+  }
+  section.project {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 0 2rem;
+    margin: 1rem;
+  }
+  section.project .img-contain {
+    position: unset;
+  }
+  section.project img {
+    width: 300px;
+    border-radius: 2rem;
+  }
+  section.project .content-1 {
+    padding: 1rem 2rem;
+  }
+  section.project .content-1 h1 {
+    font-size: 2rem;
+  }
+  section.project .content-1 p {
+    font-weight: 200;
+    font-size: 1.2rem;
+  }
+  section.project .content-1 button {
+    padding: 1rem 2rem;
+    border: none;
+  }
 }/*# sourceMappingURL=main.css.map */

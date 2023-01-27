@@ -5,6 +5,33 @@ const linkedin = document.querySelector('.linkedin');
 
 const github = document.querySelector('.github');
 
+
+const menu = document.querySelector('.menu');
+
+const close = document.querySelector('.close');
+
+
+
+const nav = document.querySelector('nav');
+
+menu.addEventListener('click', ()=>{
+
+
+    nav.classList.add('open-nav');
+
+      
+
+});
+
+close.addEventListener('click', ()=>{
+
+
+    nav.classList.remove('open-nav');
+
+      
+
+});
+
 twitter.addEventListener('click',()=>{
 
     window.open('https://twitter.com/kumarazad2917');

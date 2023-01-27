@@ -6,6 +6,7 @@
 
 body {
   background: linear-gradient(0.33deg, #1E1E1E 1.35%, #E1B4FE 195.79%);
+  font-family: Arial;
 }
 
 section.hero {
@@ -27,7 +28,7 @@ section.hero .greeting {
 }
 section.hero #hint1 {
   color: white;
-  width: auto;
+  display: block;
   text-align: center;
   font-weight: lighter;
 }
@@ -65,7 +66,7 @@ section.hero .about-me p span {
   font-weight: bold;
 }
 section.hero .about-me .button-align {
-  text-align: center;
+  text-align: start;
 }
 section.hero .about-me .button-align button {
   background: black;
@@ -80,18 +81,20 @@ section.hero .about-me .button-align button a {
   text-decoration: none;
 }
 section.hero .best-line {
-  text-align: center;
-  width: 300px;
+  text-align: start;
   margin: 2em auto;
+}
+section.hero .best-line p {
+  width: 300px;
+  font-weight: lighter;
 }
 section.hero .best-line h2 {
   color: white;
   font-weight: bold;
 }
 
-footer hr {
-  margin: 1em 0;
-  height: 0.5px;
+footer {
+  margin-top: 2em;
 }
 footer .social {
   display: flex;
@@ -102,6 +105,129 @@ footer .social {
   margin-bottom: 2em;
 }
 footer .social svg {
+  width: 2em;
+  cursor: pointer;
+}
+
+section.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: Arial;
+  margin: 2em 8em;
+}
+section.project .img-contain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+section.project img {
+  width: 300px;
+  z-index: -1;
+}
+section.project .content-1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  text-align: start;
+  width: 300px;
+  justify-content: start;
+  z-index: 999;
+  padding: 8px 16px;
+  color: white;
+}
+section.project .content-1 p {
+  font-weight: lighter;
+}
+section.project .content-1 button {
+  background: black;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 8px 16px;
+  text-align: center;
+  color: white;
+}
+
+.best-line {
+  text-align: start;
+  margin: 2em auto;
+}
+.best-line p {
+  width: 300px;
+  font-weight: lighter;
+}
+.best-line h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.project-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+section.contact-role {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+section.contact-role .contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 1em;
+  background: white;
+  width: 300px;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0px 50px 100px #000000;
+}
+section.contact-role .contact-us input {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  width: 269px;
+  background: rgba(217, 217, 217, 0.5);
+}
+section.contact-role .contact-us textarea {
+  padding: 8px 16px;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  border-radius: 16px;
+  width: 269px;
+  background: rgba(217, 217, 217, 0.5);
+}
+section.contact-role .contact-us button {
+  background: black;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+section.contact-role footer .social {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+section.contact-role footer .social svg {
   width: 2em;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

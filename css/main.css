@@ -75,6 +75,10 @@ section.hero .about-me .button-align button {
   text-align: center;
   color: white;
 }
+section.hero .about-me .button-align button a {
+  color: white;
+  text-decoration: none;
+}
 section.hero .best-line {
   text-align: center;
   width: 300px;
@@ -99,4 +103,5 @@ footer .social {
 }
 footer .social svg {
   width: 2em;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

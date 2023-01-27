@@ -86,8 +86,8 @@ section.hero .best-line h2 {
 }
 
 footer hr {
-  margin: 1em;
-  height: 1px;
+  margin: 1em 0;
+  height: 0.5px;
 }
 footer .social {
   display: flex;

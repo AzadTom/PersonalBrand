@@ -85,7 +85,11 @@ section.hero .best-line h2 {
   font-weight: bold;
 }
 
-.social {
+footer hr {
+  margin: 1em;
+  height: 1px;
+}
+footer .social {
   display: flex;
   -moz-column-gap: 18px;
        column-gap: 18px;
@@ -93,6 +97,6 @@ section.hero .best-line h2 {
   align-items: center;
   margin-bottom: 2em;
 }
-.social svg {
+footer .social svg {
   width: 2em;
 }/*# sourceMappingURL=main.css.map */

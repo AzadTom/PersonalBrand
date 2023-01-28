@@ -290,6 +290,17 @@ section.project .content-1 button {
   margin: 2em;
 }
 
+@media screen and (min-width: 500px) {
+  section.hero .button-align {
+    text-align: start;
+  }
+  section.hero .button-align button {
+    font-size: 1.2rem;
+  }
+  section.hero .greeting {
+    font-size: 3rem;
+  }
+}
 @media screen and (min-width: 600px) {
   section.hero .button-align {
     text-align: start;

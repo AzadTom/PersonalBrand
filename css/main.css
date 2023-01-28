@@ -69,9 +69,6 @@ section.hero {
   display: flex;
   flex-direction: column;
   row-gap: 2em;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
   padding: 8px 16px;
   color: white;
 }
@@ -167,16 +164,6 @@ section.contact-us img {
   border-top-right-radius: 2rem;
   position: relative;
 }
-section.contact-us img::after {
-  content: " ";
-  background: red;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-}
 section.contact-us div.contact-info {
   display: flex;
   flex-direction: column;
@@ -240,9 +227,6 @@ section.project {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   font-family: Arial;
   margin: 2em 8em;
 }

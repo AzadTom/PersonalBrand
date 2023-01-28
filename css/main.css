@@ -148,6 +148,65 @@ section.hero .best-line h2 {
   font-weight: bold;
 }
 
+section.contact-us {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  box-shadow: 0px 50px 100px #000000;
+  background: white;
+  margin: 2em;
+}
+section.contact-us img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  position: relative;
+}
+section.contact-us img::after {
+  content: " ";
+  background: red;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+section.contact-us div.contact-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  margin: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+section.contact-us div.contact-info .full-name {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+section.contact-us div.contact-info input, section.contact-us div.contact-info textarea {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  background: rgba(217, 217, 217, 0.5);
+}
+section.contact-us div.contact-info button {
+  padding: 1em 2em;
+  font-family: Arial;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -243,65 +302,17 @@ section.project .content-1 button {
   margin: 2em;
 }
 
-section.contact-role {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-section.contact-role .contact-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  row-gap: 1em;
-  background: white;
-  width: 300px;
-  border-radius: 2rem;
-  padding: 2rem;
-  box-shadow: 0px 50px 100px #000000;
-}
-section.contact-role .contact-us input {
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  list-style-type: none;
-  outline: none;
-  width: 269px;
-  background: rgba(217, 217, 217, 0.5);
-}
-section.contact-role .contact-us textarea {
-  padding: 1rem 2rem;
-  text-decoration: none;
-  list-style-type: none;
-  outline: none;
-  border: none;
-  border-radius: 2rem;
-  width: 269px;
-  background: rgba(217, 217, 217, 0.5);
-}
-section.contact-role .contact-us button {
-  background: black;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-}
-section.contact-role footer .social {
-  display: flex;
-  -moz-column-gap: 18px;
-       column-gap: 18px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2em;
-}
-section.contact-role footer .social svg {
-  width: 2em;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 600px) {
+  section.contact-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  section.contact-us img {
+    border-radius: 0%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
   .project-title {
     margin-bottom: -6em;
   }
@@ -326,15 +337,6 @@ section.contact-role footer .social svg {
   section.project .content-1 button {
     padding: 1rem 2rem;
     border: none;
-  }
-  section.contact-role .contact-us {
-    width: 500px;
-  }
-  section.contact-role .contact-us input {
-    width: 450px;
-  }
-  section.contact-role .contact-us textarea {
-    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {

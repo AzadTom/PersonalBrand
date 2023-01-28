@@ -88,8 +88,9 @@ section.hero #hint1 {
   font-weight: lighter;
 }
 section.hero .hero-img {
-  width: 18rem;
-  border-radius: 38px;
+  width: 100%;
+  padding: 1em 2em;
+  border-radius: 4rem;
 }
 section.hero .quote {
   font-size: 2rem;
@@ -303,6 +304,15 @@ section.project .content-1 button {
 }
 
 @media screen and (min-width: 600px) {
+  section.hero .button-align {
+    text-align: start;
+  }
+  section.hero .button-align button {
+    font-size: 1.5rem;
+  }
+  section.hero .greeting {
+    font-size: 3rem;
+  }
   section.contact-us {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -317,7 +327,7 @@ section.project .content-1 button {
     margin-bottom: -6em;
   }
   section.project {
-    margin: 16em 0em;
+    margin: 18em 0em;
   }
   section.project img {
     width: 500px;
@@ -331,11 +341,12 @@ section.project .content-1 button {
     font-size: 2rem;
   }
   section.project .content-1 p {
-    font-weight: 200;
+    font-weight: lighter;
     font-size: 1.2rem;
   }
   section.project .content-1 button {
     padding: 1rem 2rem;
+    font-size: 1.5rem;
     border: none;
   }
 }
@@ -373,7 +384,9 @@ section.project .content-1 button {
   section.project {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: center;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
     padding: 0 2rem;
     margin: 1rem;
   }

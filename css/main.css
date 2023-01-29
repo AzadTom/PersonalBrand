@@ -17,20 +17,24 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 8px 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  align-items: center;
+  background-color: white;
+  opacity: 50%;
 }
 header h1 {
-  color: white;
+  color: black;
   font-size: large;
-}
-header h1 span {
-  color: #afafaf;
+  font-weight: lighter;
 }
 header .menu {
   width: 2em;
   cursor: pointer;
 }
 header nav {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   right: 0;
   background: white;
@@ -126,7 +130,8 @@ section.hero .about-me .button-align button {
   border-radius: 50px;
   text-decoration: none;
   border: none;
-  padding: 1rem 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   color: white;
 }
@@ -291,23 +296,11 @@ section.project .content-1 button {
 }
 
 @media screen and (min-width: 500px) {
-  section.hero .button-align {
-    text-align: start;
-  }
-  section.hero .button-align button {
-    font-size: 1.2rem;
-  }
   section.hero .greeting {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 600px) {
-  section.hero .button-align {
-    text-align: start;
-  }
-  section.hero .button-align button {
-    font-size: 1.5rem;
-  }
   section.hero .greeting {
     font-size: 3rem;
   }
@@ -357,13 +350,14 @@ section.project .content-1 button {
     width: auto;
     height: auto;
     background: none;
+    color: black;
     position: none;
   }
   header nav ul {
     display: flex;
   }
   header nav ul a {
-    color: #E1B4FE;
+    color: black;
     font-weight: lighter;
   }
   header nav ul a:hover {
@@ -383,6 +377,7 @@ section.project .content-1 button {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
     padding: 0 2rem;
@@ -397,6 +392,9 @@ section.project .content-1 button {
   }
   section.project .content-1 {
     padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   section.project .content-1 h1 {
     font-size: 2rem;

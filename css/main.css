@@ -317,7 +317,6 @@ footer .social svg {
   section.project .content-1 {
     padding: 1rem 2rem;
     display: flex;
-    align-items: flex-start;
   }
   section.project .content-1 h1 {
     font-size: 2rem;

@@ -94,6 +94,9 @@ section.hero .container .quote-1, section.hero .container .quote-2, section.hero
   align-items: flex-start;
   row-gap: 1em;
 }
+section.hero .container .about-me .tech-ed span {
+  font-weight: 700;
+}
 section.hero .container .about-me button {
   background: black;
   padding: 1rem 2rem;

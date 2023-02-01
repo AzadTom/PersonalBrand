@@ -13,6 +13,12 @@ body {
   transform: translateX(0);
 }
 
+.main-container {
+  max-width: 1024;
+  margin: 0 auto;
+  padding: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -63,86 +69,92 @@ header nav ul a:hover {
 }
 
 section.hero {
-  font-family: Arial;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2em;
+  margin: 2em;
+  border: 1px solid red;
+}
+section.hero .greeting {
+  letter-spacing: 1em;
+}
+section.hero .hero-img {
+  width: 300px;
+  border-radius: 3em;
+}
+section.hero .container {
   display: flex;
   flex-direction: column;
   row-gap: 2em;
-  padding: 8px 16px;
-  color: white;
 }
-section.hero .greeting {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 24px;
-}
-section.hero #hint1 {
-  color: white;
-  display: block;
-  text-align: center;
-  font-weight: lighter;
-}
-section.hero .hero-img {
-  width: 100%;
-  padding: 1em 2em;
-  border-radius: 4rem;
-}
-section.hero .quote {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: left;
-}
-section.hero #hint2 {
-  color: white;
-  font-weight: lighter;
-}
-section.hero .about-me {
+section.hero .container .quote-1, section.hero .container .quote-2, section.hero .container .about-me {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1em;
+}
+section.hero .container .about-me button {
+  background: black;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+section.hero .container .about-me button a {
+  list-style-type: none;
+  border: none;
+  text-decoration: none;
+  color: white;
+}
+
+div.project-title {
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+}
+
+section.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
   font-family: Arial;
+  margin: 3em 0;
+}
+section.project .img-contain {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+section.project img {
+  width: 300px;
+  z-index: -1;
+  border-radius: 16px;
+}
+section.project .content-1 {
+  display: flex;
   flex-direction: column;
   row-gap: 1em;
-  margin-top: 2em;
-}
-section.hero .about-me h1 {
-  font-weight: bold;
-  font-size: 2em;
   text-align: start;
-}
-section.hero .about-me p {
+  width: 300px;
+  justify-content: start;
+  z-index: 999;
+  padding: 0rem 1rem;
   color: white;
+}
+section.project .content-1 p {
   font-weight: lighter;
-  text-align: start;
 }
-section.hero .about-me p span {
-  font-weight: bold;
-}
-section.hero .about-me .button-align {
-  text-align: start;
-}
-section.hero .about-me .button-align button {
+section.project .content-1 button {
   background: black;
   border-radius: 50px;
   text-decoration: none;
-  border: none;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   text-align: center;
   color: white;
-}
-section.hero .about-me .button-align button a {
-  color: white;
-  text-decoration: none;
-}
-section.hero .best-line {
-  text-align: start;
-  margin: 2em auto;
-}
-section.hero .best-line p {
-  font-weight: lighter;
-}
-section.hero .best-line h2 {
-  color: white;
-  font-weight: bold;
 }
 
 section.contact-us {
@@ -222,82 +234,7 @@ footer .social svg {
   cursor: pointer;
 }
 
-section.project {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  align-content: center;
-  font-family: Arial;
-  margin: 2em 8em;
-}
-section.project .img-contain {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-section.project img {
-  width: 300px;
-  z-index: -1;
-  border-radius: 16px;
-}
-section.project .content-1 {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1em;
-  text-align: start;
-  width: 300px;
-  justify-content: start;
-  z-index: 999;
-  padding: 1rem 2rem;
-  color: white;
-}
-section.project .content-1 p {
-  font-weight: lighter;
-}
-section.project .content-1 button {
-  background: black;
-  border-radius: 50px;
-  text-decoration: none;
-  padding: 8px 16px;
-  text-align: center;
-  color: white;
-}
-
-.best-line {
-  text-align: left;
-  margin: 2em;
-}
-.best-line p {
-  font-weight: lighter;
-}
-.best-line h2 {
-  color: white;
-  font-weight: bold;
-}
-
-.project-title {
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-transform: uppercase;
-  margin: 2em;
-}
-
-@media screen and (min-width: 500px) {
-  section.hero .greeting {
-    font-size: 3rem;
-  }
-}
 @media screen and (min-width: 600px) {
-  section.hero .greeting {
-    font-size: 3rem;
-  }
   section.contact-us {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -308,14 +245,8 @@ section.project .content-1 button {
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
   }
-  .project-title {
-    margin-bottom: -6em;
-  }
-  section.project {
-    margin: 18em 0em;
-  }
   section.project img {
-    width: 500px;
+    height: 100%;
     border-radius: 4rem;
   }
   section.project .content-1 {
@@ -333,6 +264,7 @@ section.project .content-1 button {
     padding: 1rem 2rem;
     font-size: 1.5rem;
     border: none;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -363,9 +295,6 @@ section.project .content-1 button {
   }
   #left-right {
     flex-direction: row;
-  }
-  .project-title {
-    margin: 2em;
   }
   section.project {
     display: flex;

@@ -311,7 +311,7 @@ footer .social svg {
     position: unset;
   }
   section.project img {
-    height: 100%;
+    width: 350px;
     border-radius: 2rem;
   }
   section.project .content-1 {

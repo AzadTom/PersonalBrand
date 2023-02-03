@@ -242,6 +242,9 @@ footer .social svg {
 }
 
 @media screen and (min-width: 600px) {
+  header .container {
+    width: 85%;
+  }
   section.contact-us {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
